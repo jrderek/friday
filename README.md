@@ -63,21 +63,35 @@ Install and Run
 Clone the repository to you computer:
 
 git clone https://github.com/jrderek/private.git
+
 cd private
+
 Creata a conda virtual or python virtual environment and then activate it.
+
 conda create -n myvirtual-name python=3.8 -y
+
 conda activate myvirtual-name
+
 Install requirements
+
 pip install -r requirements.txt
+
 Run streamlit locally and start web service:
+
 streamlit run app.py
+
 Run on Docker
+
 Pull the Docker image:
+
 docker pull jrdegbe/privately/github-action:0.1.0
 
 
+
 2. Run the  Docker image locally:
+3. 
 docker run -p 8501:8501 privately/github-action
+
 
 3. Open the localhost:8501
 
