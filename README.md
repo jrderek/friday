@@ -62,9 +62,9 @@ Save whole Machine Learning Pipeline as pickle file
 Install and Run
 Clone the repository to you computer:
 
-git clone https://github.com/jrderek/private.git
+git clone https://github.com/jrderek/friday.git
 
-cd private
+cd firday
 
 Creata a conda virtual or python virtual environment and then activate it.
 
@@ -84,7 +84,7 @@ Run on Docker
 
 Pull the Docker image:
 
-docker pull jrdegbe/privately/github-action:0.1.0
+docker pull jrdegbe/window:0.1.0
 
 
 
