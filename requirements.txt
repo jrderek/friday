@@ -1,0 +1,17 @@
+#cryptography==2.8
+pycaret[full]
+streamlit
+streamlit-pandas-profiling
+streamlit-aggrid
+pandas-profiling
+hpbandster
+ConfigSpace
+xlrd
+xlsxwriter
+openpyxl
+sdv
+numba==0.53.0
+fastapi==0.68.0
+pillow==9.0.1
+python-multipart==0.0.5
+aiofiles==0.4.0

@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: vanquis
+ labels:
+   app: vanquis
+spec:
+ selector:
+   matchLabels:
+     app: vanquis
+     tier: web
+ template:
+   metadata:
+     labels:
+       app: vanquis
+       tier: web
+   spec:
+     containers:
+     - name: vanquis
+       image: gcr.io/PROJECT_ID/IMAGE:TAG
+       ports:
+       - containerPort: 8501
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+ name: streamlitweb-backend
+ labels:
+   app: vanquis
+spec:
+ type: LoadBalancer
+ selector:
+   app: vanquis
+   tier: web
+ ports:
+ - port: 80
+   targetPort: 8501
